@@ -1,0 +1,374 @@
+.main{
+    /* Frame 6 */
+
+
+position: relative;
+width: 1920px;
+height: 1782px;
+
+background: #FFFFFF;
+}
+
+header{
+    /* Frame 1 */
+
+
+position: absolute;
+width: 1696px;
+height: 359px;
+left: 112px;
+top: 24px;
+
+background: #00B2BF;
+border-radius: 40px;
+}
+.logo_bk{
+    /* logo_BK 1 */
+
+
+position: absolute;
+width: 170px;
+height: 250px;
+left: 350px;
+top: 60px;
+
+background: url(logo_BK);
+}
+.logo_bblab{
+    /* logo_bblab 1 */
+
+
+position: absolute;
+width: 200px;
+height: 200px;
+left: 584px;
+top: 110px;
+
+background: url(logo_bblab.png);
+}
+header p{
+    /* COFFEE ROBOT */
+
+
+position: absolute;
+width: 592px;
+height: 77px;
+left: 848px;
+top: 110px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 64px;
+line-height: 77px;
+
+color: #FFFFFF;
+}
+body .connect{
+    /* Frame 2 */
+
+
+position: absolute;
+width: 1696px;
+height: 193px;
+left: 112px;
+top: 423px;
+
+background: #E0EEE0;
+border-radius: 40px;
+}
+
+.connect .form_input{
+    /* Rectangle 1 */
+
+
+position: absolute;
+width: 420px;
+height: 45px;
+left: calc(50% - 420px/2);
+top: calc(50% - 45px/2 - 39px);
+
+background: #FFFFFF;
+mix-blend-mode: normal;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+font-size: 24px;
+}
+
+.connect button{
+    /* Rectangle 2 */
+
+
+position: absolute;
+width: 141px;
+height: 37px;
+left: 777px;
+top: 97px;
+
+background: #3399FF;
+border-radius: 40px;
+cursor: pointer;
+}
+
+
+.btn_connect{
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+/* identical to box height */
+
+text-align: center;
+
+color: #FFFFFF;
+}
+button:hover {background: #99D1D3;}
+
+.connect .feedbackText{
+    /* Connected to your robot */
+
+
+position: absolute;
+width: 450px;
+height: 29px;
+/* left: 728px;
+top: 120px; */
+left: calc(50% - 450px/2);
+top: calc(50% - 29px/2 + 35px);
+
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+/* identical to box height */
+
+text-align: center;
+
+color: #33CC33;
+}
+
+.control{
+    /* Frame 4 */
+
+
+position: absolute;
+width: 1696px;
+height: 903px;
+left: 112px;
+top: 656px;
+
+background: #FAF0E6;
+border-radius: 40px;
+}
+.control_text{
+    /* CONTROL CENTER */
+
+
+position: absolute;
+width: 350px;
+height: 44px;
+left: 34px;
+top: 48px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 44px;
+/* identical to box height */
+
+text-align: center;
+
+color: #000000;
+}
+
+
+.dot1{
+    /* Ellipse 2 */
+
+position: absolute;
+width: 305px;
+height: 305px;
+left: 196px;
+top: 299px;
+border-radius: 50%;
+background: #000000;
+}
+.dot2{
+    /* Ellipse 1 */
+
+
+position: absolute;
+width: 300px;
+height: 300px;
+left: calc(50% - 300px/2 - 500px);
+top: calc(50% - 300px/2 + 0.5px);
+border-radius: 50%;
+background: #FFFFFF;
+mix-blend-mode: normal;
+}
+.line1{
+    /* Line 1 */
+
+
+position: absolute;
+width: 300px;
+height: 0px;
+left: calc(50% - 300px/2 - 500px);
+top: calc(50% - 300px/2 + 150px);
+
+border: 1px solid #000000;
+transform: rotate(45deg);
+}
+.line2{
+    /* Line 2 */
+
+
+position: absolute;
+width: 300px;
+height: 0px;
+left: calc(50% - 300px/2 - 500px);
+top: calc(50% - 300px/2 + 150px);
+
+border: 1px solid #000000;
+transform: rotate(-45deg);
+}
+.polygon_Up{
+	width: 0;
+	height: 0;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-bottom: 50px solid #555;
+}
+
+
+
+
+
+.Nav2dmapText{
+    /* Map */
+
+
+position: absolute;
+width: 52px;
+height: 29px;
+left: 796px;
+top: 54px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 29px;
+/* identical to box height */
+
+text-align: center;
+
+color: #000000;
+}
+.CamText{
+    /* Camera */
+
+
+position: absolute;
+width: 92px;
+height: 29px;
+left: 756px;
+top: 492px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 29px;
+/* identical to box height */
+
+text-align: center;
+
+color: #000000;
+
+}
+
+.nav2dmapCanvas{
+    /* Rectangle 3 */
+
+
+position: absolute;
+width: 718px;
+height: 400px;
+left: 878px;
+top: 34px;
+
+background: #D9D9D9;
+}
+.camCanvas{
+    /* Rectangle 4 */
+
+
+position: absolute;
+width: 718px;
+height: 400px;
+left: 878px;
+top: 466px;
+
+background: #D9D9D9;
+}
+
+
+
+
+footer{
+position: absolute;
+width: 1714px;
+height: 113px;
+left: 103px;
+top: 1628px;
+
+background: #B9D3EE;
+border-radius: 30px;
+}
+footer .design{
+    /* © Design by Luong Anh Van */
+
+
+position: absolute;
+width: 328px;
+height: 29px;
+left: 693px;
+top: 28px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 29px;
+/* identical to box height */
+
+text-align: center;
+
+color: #FFFFFF;
+}
+footer .email{
+    /* luonganhvan2000@gmail.com */
+
+
+position: absolute;
+width: 229px;
+height: 19px;
+left: 742px;
+top: 68px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+text-align: center;
+
+color: #3399FF;
+}
+
+
+

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="/main.css">
+
+    <!-- ROSJS -->
+    <script type="text/javascript" src="/rosjsScripts/easeljs.min.js"></script>
+    <script type="text/javascript" src="/rosjsScripts/eventemitter2.min.js"></script>
+    <script type="text/javascript" src="/rosjsScripts/mjpegcanvas.min.js"></script>
+    <script type="text/javascript" src="/rosjsScripts/nav2d.min.js"></script>
+    <script type="text/javascript" src="/rosjsScripts/ros2d.min.js"></script>
+    <script type="text/javascript" src="/rosjsScripts/roslib.min.js"></script>
+    <!-- ROSJS END -->
+
+    <script type="text/javascript" src="/main.js"></script>
+
+    <title>ROS WEB</title>
+</head>
+<body>
+    <div class="main">
+        <header>
+            <img class="logo_bk" src="/img/logo_BK.png" alt="Logo DH Bach Khoa HN" >
+            <img class="logo_bblab" src="/img/logo_bblab.png" alt="Logo Bblab">
+            <p>COFFEE ROBOT</p>
+        </header>
+        <body onload="cam_init(); nav_and_map_init();">
+            <div class="connect">
+                <input type="text" class="form_input" placeholder="ID Your Robot">
+                <button class="btn_connect" type="button"> 
+                        Connect
+                </button>
+                <div class="feedbackText" id="feedback"></div>
+            </div>
+            <div class="control">
+                
+                <div class="control_text">CONTROL CENTER</div>
+
+                <div class="PoseX" id="poseX"></div>
+                <div class="PoseY" id="poseY"></div>
+                <div class="PoseLinVel" id="poseLinVel"></div>
+                <div class="PoseTheta" id="poseTheta"></div>
+                <div class="PoseAngVel" id="poseAngVel"></div>
+                <div class="feedbackText" id="feedback"></div>
+                <div class="MoveBaseStatusText" id="movebaseStatus">Status:</div>
+                <div class="Nav2dmapText">Maps</div>
+                <div class="CamText" >Camera</div>
+                <div>
+                    <span class="dot1"></span>
+                    <span class="dot2"></span>
+                    <span class="line1"></span>
+                    <span class="line2"></span>
+                    <div class="polygon_Up"></div>
+                </div>
+                <form id="c2356" >
+                    <div class="MoveButtonsForm">
+                        <img src="/img/up-arrow.png" alt="" class="UpButton" type="button"  onclick="goforward()">
+                        <img src="/img/down-arrow.png" alt="" class="DownButton" type="button"  onclick="gobackward()">
+                        <img src="/img/left-arrow.png" alt="" class="LeftButton" type="button" onclick="turnleft()">
+                        <img src="/img/right-arrow.png" alt="" class="RightButton" type="button" onclick="turnright()">
+                    </div>
+                </form>
+
+                <div class="nav2dmapCanvas" id="nav2dmap"></div>
+                <div class="camCanvas" id="mjpeg"></div>
+
+                <form id="c1111" >  
+                    <div class="MapButtonsForm">
+                        <button class="MapZoomButton" type="button" ="Up" onclick="MapZoomFunc()">+</button>
+                        <button class="MapPanButton" type="button" ="Up" onclick="MapPanFunc()">-</button>
+                        <button class="CancelGoalButton" type="button" ="Up" onclick="cancelGoalFunc()">Cancel</button>
+                    </div>
+                </form>
+        
+            </div>
+        </body>
+        <footer>
+            <h1 class="design">© Design by Luong Anh Van</h1>
+            <h1 class="email">luonganhvan2000@gmail.com</h1>
+        </footer>
+    </div>
+</body>
+</html>
